@@ -5,5 +5,9 @@
     $app = new Silex\Application();
 
     $app['debug'] = true;
+
+    $app->get("/", function () {
+        return "Hello Silex";
+    });
     
     $app->run();
