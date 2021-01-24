@@ -6,8 +6,6 @@
 
     $app['debug'] = true;
 
-    $app->get("/", function () {
-        return "Hello Silex";
-    });
-    
+    require_once __DIR__ . '/../app/routes.php';
+
     $app->run();
