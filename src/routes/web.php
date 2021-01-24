@@ -8,7 +8,7 @@
     });
 
     $app->get("/route2", function () {
-        return new Symfony\Component\HttpFoundation\Response("Hello Silex From Route2");
+        return new Response("Hello Silex From Route2");
     });
 
     $app->get("/jsonRoute", function () {

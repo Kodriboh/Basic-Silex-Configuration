@@ -9,6 +9,7 @@
 
     $app['debug'] = $_ENV['APP_ENV'] === 'dev' ? true : false;
 
-    require_once __DIR__ . '/../app/routes.php';
+    require_once __DIR__ . '/../routes/web.php';
+    require_once __DIR__ . '/../routes/api.php';
 
     $app->run();
