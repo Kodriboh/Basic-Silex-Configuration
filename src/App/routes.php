@@ -1,9 +1,9 @@
 <?php 
 
     $app->get("/", function () {
-        return "Hello Silex From Routes!";
+        return "Hello Silex From Route1!";
     });
 
     $app->get("/route2", function () {
-        return "This is a test for route 2";
+        return new Symfony\Component\HttpFoundation\Response("Hello Silex From Route2");
     });
